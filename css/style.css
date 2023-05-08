@@ -37,11 +37,15 @@ nav{
 
 }
 .nav-link{
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .nav-item:hover{
     background-color: rgb(255, 255, 255);
     color:rgb(145, 29, 14)
+}
+a{
+    text-decoration: none;
 }
 header, footer{
     color: rgb(145,29,14);
