@@ -26,6 +26,9 @@ h1{
 main, nav {
     flex: 1;
 }
+main{
+    padding-top: 0;
+}
 nav .nav-link.active {
     font-size: 1.2rem;
     font-weight: bold;
