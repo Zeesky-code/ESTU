@@ -39,9 +39,11 @@ nav{
     color: rgb(255, 255, 255);
 
 }
+li{
+    text-decoration: none;
+}
 .nav-link{
     color: rgb(255, 255, 255);
-    text-decoration: none;
 }
 .nav-item:hover{
     background-color: rgb(255, 255, 255);
