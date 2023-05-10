@@ -47,8 +47,7 @@ nav .nav-link.active {
 
 nav {
     height: 100%;
-    background-color: rgb(145, 29, 14);
-    color: rgb(255, 255, 255);
+    color: rgb(145, 29, 14);
 
 }
 
@@ -57,12 +56,12 @@ li {
 }
 
 .nav-link {
-    color: rgb(255, 255, 255);
+    color: rgb(145, 29, 14);
 }
 
 .nav-item:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(145, 29, 14)
+    color: rgb(255, 255, 255);
+    background-color: rgb(145, 29, 14)
 }
 
 a {
@@ -91,6 +90,45 @@ header {
 
 .about-img:hover {
     transform: scale(1.1);
+}
+.announcements ul {
+    list-style: none;
+    align-self: flex-start;
+}
+
+.announcements ul li {
+    padding-bottom: 1.2em;
+}
+
+.announcements ul a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+
+.announcements ul a:hover {
+    color: #9b000a;
+}
+
+.announcements ul a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9b000a;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.announcements ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* university page */
