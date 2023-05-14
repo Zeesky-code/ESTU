@@ -22,14 +22,15 @@
           <span class="uni-title 	d-none d-sm-block ">ESTU</span>
         </a>
         <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#mainmenu"
-                aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#mainmenu"
+        aria-controls="mainmenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse " id="mainmenu">
           <ul class="nav navbar-nav ms-auto  ">
             <li class="nav-item highlight active"><a class="nav-link " href="#">Home</a></li>
@@ -65,9 +66,9 @@
   <section class=" container-fluid my-5 my-sm-0 p-5 d-flex align-items-center  flex-wrap  main flex-md-nowrap justify-content-md-between flex-md-row flex-sm-column align-content-center align- gap-5 mt-lg-4
      ">
     <div class="pt-sm-5">
-        <div class="typer">
-          <h2 class="main-text fw-bold fs-2 my-3 "> Eskisehir Technical University</h2>
-        </div>
+      <div class="typer">
+        <h2 class="main-text fw-bold fs-2 my-3 "> Eskisehir Technical University</h2>
+      </div>
     </div>
     <div id="uni-img-slide" class="container w-100 " data-bs-ride="true">
       <img src="images/homeImg.jpg" alt="Eskisehir Technical University" class="img-fluid uni-img d-block w-100">
@@ -130,12 +131,15 @@
   </section>
 
   <footer class="text-white text-center d-md-flex justify-content-around ">
-    <div >
+    <div>
       <h3 class="lead"> 2023 © All rights reserved. Eskişehir Teknik Üniversitesi <br> Made by Zainab Lawal </h3>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
