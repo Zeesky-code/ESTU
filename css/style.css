@@ -1,102 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
-html,
-body {
-    height: 100%;
+.uni-title:hover {
+    color: #f0cbce ;
+} 
+
+nav ul {
+    align-items: center;
+} 
+nav .navbar-nav li a,
+.typer h2,
+.uni-title,
+ aside ul li a,
+ .title {
+    color: #9b000a !important;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: auto;
-    padding-top: 100px;
+.active {
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
-h1 {
-    font-weight: 400;
+@media all and (min-width: 767.3px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+    }
 }
 
-.container-fluid {
+footer{
+    background-color: #9b000a !important ;
+}
+section {
+    padding: 100px 50px;
+}
+
+.main {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/estu_view.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 80vh;
+}
+@media (min-width: 1200px) {
+    .main-slide {
+        max-width: 60% !important;
+    }
+}
+
+.s-icon:hover,.my-web-title:hover {
+    filter: invert(6%) sepia(63%) saturate(7410%) hue-rotate(351deg) brightness(139%) contrast(108%);
+}
+
+.uni-img {
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.uni-img:hover {
+    transform: scale(1.05);
+}
+
+
+.highlight a {
+    border-radius: 8px;
+}
+
+.highlight a:hover {
+    background-color: #f0cbce ;
+}
+
+.announcements {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    align-items: center;
+    width: 80%;
+    padding: 1.3em;
+    overflow: auto;
+}
+@media (max-width: 768px){
+    .announcements {
+        width: 100%;
+    }
 }
 
-.row {
-    flex-grow: 1;
-}
-
-main,
-nav {
-    flex: 1;
-}
-
-main {
-    padding-top: 0;
-}
-
-nav .nav-link.active {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-nav {
-    height: 100%;
-    color: rgb(145, 29, 14);
-
-}
-
-li {
-    text-decoration: none;
-}
-
-.nav-link {
-    color: rgb(145, 29, 14);
-}
-
-.nav-item:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(145, 29, 14)
-}
-
-a {
-    text-decoration: none;
-}
-
-header,
-footer {
-    color: rgb(145, 29, 14);
-    border-color: #6b6b6b;
-    background-color: rgb(255, 255, 255);
-}
-
-footer {
-    margin-top: auto;
-}
-header {
-	background-image: url(../imgs/ESTU.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	color: #fff;
-    max-height: 10vh;
-}
-
-header img{
-    width: 10%;
-}
-.about-img {
-    transition: transform .5s;
-}
-
-.about-img:hover {
-    transform: scale(1.1);
-}
 .announcements ul {
     list-style: none;
     align-self: flex-start;
@@ -137,37 +134,267 @@ header img{
     transform-origin: bottom left;
 }
 
-/* university page */
-/* Set background color, padding and margin for the university picture */
-.transparent-on-hover {
-    background-color: #fff;
-    padding: 20px;
+
+/* ***********Login page *********** */
+.login-sec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/estu_view.jpeg");
+}
+
+.login-main {
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-main .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #9b000a;
+    user-select: none;
+    border-radius: 15px 15px 0 0;
+    background-image: linear-gradient(to right top,
+            #009b91,
+            #3eb68f,
+            #77d086,
+            #b4e679,
+            #f9f871);
+}
+
+.login-main form {
+    padding: 10px 30px 50px 30px;
+}
+
+.login-main form .field {
+    height: 50px;
+    width: 100%;
     margin-top: 20px;
     position: relative;
 }
 
-/* Set opacity for the university picture */
-.transparent-on-hover img {
-    opacity: 1;
-    transition: opacity 0.5s;
+.login-main form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
-/* Set opacity to 0.2 on hover */
-.transparent-on-hover:hover {
-    opacity: 0.2;
+.login-main form .field input:focus,
+form .field input:valid {
+    border-color: #009b91;
 }
 
-/* Set position and opacity for the overlay text */
-.overlay-text {
+.login-main form .field label {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.5s;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
 }
 
-/* Set opacity to 1 on hover */
-.transparent-on-hover:hover .overlay-text {
+.field input:focus~label,
+form .field input:valid~label {
+    top: 0%;
+    font-size: 16px;
+    color: #9b000a;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+form .content {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form .content .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .content input {
+    width: 15px;
+    height: 15px;
+    background: red;
+}
+
+form .content label {
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+}
+
+form .content .pass-link a,
+.login-main form .signup-link>a {
+    color: #9b000a;
+}
+
+form .field input[type="submit"] {
+    color: #9b000a;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-image: linear-gradient(to right top,
+            #009b91,
+            #3eb68f,
+            #77d086,
+            #b4e679,
+            #f9f871);
+    transition: all 0.3s ease;
+}
+
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+form .signup-link {
+    color: #571616;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+.login-title {
+    display: none;
+}
+
+/*****University*********/
+.sec-main {
+    min-height: 50vh;
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
     opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: "Show more";
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: "Show less";
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+}
+
+.uni-img-2:hover img {
+    opacity: 0.5;
+}
+
+/*********Academics*********/
+.table-responsive h1{
+    background-color: #9b000a;
+}
+table thead {
+    background-color: #f0cbce;
+    color: #9b000a;
+}
+/******************Student***********/
+.club-img {
+    max-height: 15em;
+}
+
+.card {
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/**********Document**********/
+
+.doc-card {
+    background-color: #fff;
+    width: 13em;
+    box-shadow: 0 5px 10px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding-top: 1.5em;
+    padding-right: .5em;
+    margin: 0.9em;
+}
+
+.doc-card .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.doc-card .icon img {
+    filter: invert(6%) sepia(63%) saturate(7410%) hue-rotate(351deg) brightness(139%) contrast(108%);
+    height: 8em;
+}
+
+.doc-card .info {
+    text-align: center;
+}
+
+.doc-card a {
+    color: #9b000a;
+}
+
+.down-icon {
+    filter: invert(6%) sepia(63%) saturate(7410%) hue-rotate(351deg) brightness(139%) contrast(108%);
+    margin-left: 6px;
+}
+
+/************Campus life******/
+
+
+/**********toggle button*************/
+
+/*******************/
+@media (max-width: 820px) {
+    header>a>span {
+        display: none;
+    }
+    .uni-main h2{
+        font-size: 2em;
+    }
+
+    .aside {
+        display: none;
+    }
 }
